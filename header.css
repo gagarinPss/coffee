@@ -1,0 +1,249 @@
+/* //////////////////// HEADER //////////////////////// */
+.header{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 2;
+}
+
+/* ////////////////// TOP HEADER //////////////////////// */
+.top-header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.top-header .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-family: Vidaloka;
+    font-size: 36px;
+}
+
+.top-header__logo span{
+    user-select: none
+}
+
+.top-header__logo a{
+    text-decoration: none;
+    color: black;
+}
+.top-header__menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    /* font-family: Nunito; */
+    font-size: 14px;
+    margin: 0;
+}
+
+.top-header__menu li{
+    margin-left: 20px;
+}
+
+.top-header__menu a:hover{
+    color: rgb(52, 120, 209);
+    transform: scale(1);
+    transition: .5s ease all;
+}
+
+.top-header__menu a{
+    text-decoration: none;
+    color: grey;
+}
+
+.top-header__contacts {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.top-header__contacts ul{
+    list-style-type: none;
+    font-size: 14px;
+    margin: 0;
+}
+.top-header__contacts ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.home-number_span{
+    font-size: 20px;
+}
+
+.home-number__elem1{
+    z-index: 6;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-number__elem1 img{
+    margin-left: 8px;
+}
+
+.home-number a{
+    text-decoration: none;
+    color: black;
+}
+
+.home-number a:hover{
+    color: rgb(52, 120, 209);
+    transform: scale(1);
+    transition: .5s ease all;
+}
+
+.home-number_display-none{
+    display: none; 
+}
+
+.home-number_display-active{
+    background-color: white;
+    position: absolute;
+    border: 1px solid black;
+    top: 61px;
+    z-index: -1;
+    width: 148.8px;
+}
+
+.top-header__language{
+    display: flex;
+    align-items: center;
+}
+
+.top-header__language a{
+    font-size: 18px;
+    text-decoration: none;
+    color: grey;
+}
+
+.top-header__language .active{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+/* ////////////////// BOTTOM HEADER //////////////////////// */
+.bottom-header{
+    background-color: #39270D; 
+    height: 76px;
+    display: flex;
+    align-items: center;
+    z-index: -3;
+}
+
+.bottom-header__catalog a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 42px;
+}
+
+.bottom-header .container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.bottom-header__catalog a:before{
+    content: "";
+    background-image: url("icons/dots_menu.svg") ;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: -42px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+.bottom-header__search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    position: relative;
+}
+
+.bottom-header__search::after{
+
+    content: "";
+    background-image: url("icons/поиск.svg");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.bottom-header__search input{
+    border-radius: 12px;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+    
+}
+
+.bottom-header__search input:focus-visible{
+    outline-color: transparent;
+}
+
+.bottom-header .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-family: Vidaloka;
+    font-size: 36px;
+    height: 100%;
+}
+
+.bottom-header__side-bar{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.bottom-header__side-bar a{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom-header__side-bar img {
+    height: 26px;
+    width: 26px;
+}
+
+.bottom-header__elem3{
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 20px;
+    margin-left: 23px;
+}
+
+.bottom-header__elem3 span{
+   font-size: 10px;
+   display: flex;
+   align-self: flex-end;
+}
+
+.bottom-header__elem2{
+    margin-left: 20px;
+}
+
